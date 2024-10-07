@@ -7,17 +7,18 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.utsninoauliyanahara.databinding.ActivityMainBinding
+import com.example.utsninoauliyanahara.databinding.ActivityProfileBinding
 
-class MainActivity : AppCompatActivity() {
-    private lateinit var binding: ActivityMainBinding
+class ProfileActivity : AppCompatActivity() {
+    private lateinit var binding: ActivityProfileBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        val binding = ActivityMainBinding.inflate(layoutInflater)
+        val binding = ActivityProfileBinding.inflate(layoutInflater)
         setContentView(binding.root)
         with(binding){
-            profileIkon.setOnClickListener {
-                val intentToLogin = Intent(this@MainActivity, ProfileActivity::class.java)
+            homeIkon.setOnClickListener {
+                val intentToLogin = Intent(this@ProfileActivity, MainActivity::class.java)
                 startActivity(intentToLogin)
             }
         }

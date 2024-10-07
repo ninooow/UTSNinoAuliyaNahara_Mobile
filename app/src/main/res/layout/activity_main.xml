@@ -607,6 +607,7 @@
             android:src="@drawable/ic_reels"
             android:layout_marginHorizontal="32dp"/>
         <ImageView
+            android:id="@+id/profile_ikon"
             android:layout_width="24dp"
             android:layout_height="24dp"
             android:src="@drawable/ic_profile"
